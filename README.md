@@ -22,7 +22,7 @@ Ready
 ### Added
 
 - 12/04/2022
-  -- initial components
+  -- Base initiated
 
 ### Removed
 
