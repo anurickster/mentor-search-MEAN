@@ -1,27 +1,41 @@
-# MentorSearch
+### Frontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.2.
+- Member Name: Member Action
+- Basic CRUD Operation component ANURAG | MOHIT
+- add login signup page in / route JAYESH| uPEDHAR | ASHWINI
 
-## Development server
+### Backend
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Ready
 
-## Code scaffolding
+### Component Assined
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Anurag & Mohit: Mentor, Homepage, Services
+- Upendhar, Ashwini & Jayesh: Login, Register | Login, Signup & It's Service
 
-## Build
+### KEEP IN MIND
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Pull Code Before do any change
+- READ ReadMe.md File
+- Update ReadMe.md File by adding some key points (Mention date if possible)
 
-## Running unit tests
+### Added
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- 12/04/2022
+  -- initial components
 
-## Running end-to-end tests
+### Removed
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+-
 
-## Further help
+### Changed
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+-
+
+### needs to be implemented FrontEnd
+
+- Navigation Bar
+- [{ViewPage}, {Search Element (Using PIPE)}, {Update and Delete Button in every post}]
+- [{Add/UpdateMentor Page}]
+- Authentication (Using Local Storage)
+- Image file Input (Further Plan)

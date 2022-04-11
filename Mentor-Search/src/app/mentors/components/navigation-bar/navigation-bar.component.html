@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="">FindMentor.com</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div *ngIf="navLinkSwitch" class="navbar-nav">
+        <a routerLink="/view" routerLinkActive="active" class="nav-link"
+          >View Mentors</a
+        >
+        <a routerLink="/add" routerLinkActive="active" class="nav-link"
+          >Add Mentor</a
+        >
+        <a
+          (click)="logout()"
+          routerLink=""
+          routerLinkActive="active"
+          class="nav-link"
+          >Log out</a
+        >
+      </div>
+      <div class="navbar-nav">
+        <a class="nav-link" routerLinkActive="active" (click)="toggleNavbar()">
+          Switch NavLinks
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>

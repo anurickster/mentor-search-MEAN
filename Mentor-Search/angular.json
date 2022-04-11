@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "mentor-search": {
+    "Mentor-Search": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -68,10 +68,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "mentor-search:build:production"
+              "browserTarget": "Mentor-Search:build:production"
             },
             "development": {
-              "browserTarget": "mentor-search:build:development"
+              "browserTarget": "Mentor-Search:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -79,7 +79,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "mentor-search:build"
+            "browserTarget": "Mentor-Search:build"
           }
         },
         "test": {
@@ -102,5 +102,5 @@
       }
     }
   },
-  "defaultProject": "mentor-search"
+  "defaultProject": "Mentor-Search"
 }
