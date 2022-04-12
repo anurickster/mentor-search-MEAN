@@ -6,6 +6,7 @@ import { MentorsViewComponent } from './components/mentors-view/mentors-view.com
 const routes: Routes = [
   { path: 'view', component: MentorsViewComponent },
   { path: 'add', component: MentorsFormComponent },
+  { path: 'add:id', component: MentorsFormComponent },
 ];
 
 @NgModule({

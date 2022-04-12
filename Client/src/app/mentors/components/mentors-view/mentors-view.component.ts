@@ -1,3 +1,4 @@
+import { Mentor } from './../../models/mentor';
 import { Component, OnInit } from '@angular/core';
 import { MentorService } from '../../services/mentor.service';
 
@@ -15,5 +16,15 @@ export class MentorsViewComponent implements OnInit {
     this.mentorService.fetchMentors().subscribe((data: any) => {
       this.mentors = data;
     });
+  }
+  deleteMentorRecord(mentorId: string) {
+    this.mentorService
+      .deleteMentor(mentorId)
+      .subscribe((data) => console.log(data));
+  }
+  updateMentorRecord(mentorId: string, mentor: any) {
+    this.mentorService
+      .updateMentor(mentorId, mentor)
+      .subscribe((data) => console.log(data));
   }
 }

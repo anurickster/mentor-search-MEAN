@@ -3,6 +3,6 @@ export interface Mentor {
   mentorName: string;
   monthExperience: number;
   yearExperience: number;
-  mentorSkills: Array<string>;
-  imgUrl: string;
+  mentorSkills?: Array<string>;
+  imgUrl?: string;
 }
