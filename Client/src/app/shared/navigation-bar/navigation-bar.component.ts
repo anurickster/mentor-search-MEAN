@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { LoginService } from '../../services/login.service';
+import { LoginService } from '../../auth/services/login.service';
 
 @Component({
   selector: 'app-navigation-bar',

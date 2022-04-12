@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { ValidationErrors } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Observable, Subject } from 'rxjs';
-import { User } from '../models/user';
+import { User } from '../../mentors/models/user';
 
 @Injectable({
   providedIn: 'root',

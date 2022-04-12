@@ -3,13 +3,14 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule } from './auth/auth-routing.module';
 import { AppComponent } from './app.component';
 import { MentorsFormComponent } from './mentors/components/mentors-form/mentors-form.component';
 import { MentorsViewComponent } from './mentors/components/mentors-view/mentors-view.component';
-import { NavigationBarComponent } from './mentors/components/navigation-bar/navigation-bar.component';
-import { LoginComponent } from './mentors/components/login/login.component';
-import { SignupComponent } from './mentors/components/signup/signup.component';
+import { NavigationBarComponent } from './shared/navigation-bar/navigation-bar.component';
+import { LoginComponent } from './auth/components/login/login.component';
+import { SignupComponent } from './auth/components/signup/signup.component';
+import { MentorRoutingModule } from './mentors/mentor-routing.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,12 @@ import { SignupComponent } from './mentors/components/signup/signup.component';
     LoginComponent,
     SignupComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    MentorRoutingModule,
+    HttpClientModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
