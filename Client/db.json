@@ -1,0 +1,22 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "signupUsers": [
+    {
+      "fullname": "Ashwini Rathod",
+      "email": "ashwinirathod@gmail.com",
+      "mobile": 9112908310,
+      "password": "abc123",
+      "confirmPassword": "abc123",
+      "id": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
