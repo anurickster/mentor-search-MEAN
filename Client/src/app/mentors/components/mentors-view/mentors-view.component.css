@@ -1,0 +1,40 @@
+.card {
+  width: max-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  margin: 1rem auto;
+  border: 1px solid #eaeaea;
+  border-radius: 0.5rem;
+  box-shadow: 2px 4px 4px #eaeaea;
+}
+.card-img-top {
+  width: 180px;
+  height: 150px;
+}
+.skills__Container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  position: relative;
+  left: -20px;
+  width: 250px;
+}
+.skills__Container :nth-child(3n-0) {
+  background-color: rgb(111, 175, 253);
+}
+.skills__Container :nth-child(3n-1) {
+  background-color: rgb(229, 157, 157);
+}
+.skills__Container :nth-child(3n-2) {
+  background-color: rgb(146, 236, 164);
+}
+.skills {
+  list-style: none;
+  padding: 0.2rem 0.5rem;
+  margin: 2px;
+  border-radius: 0.4rem;
+}

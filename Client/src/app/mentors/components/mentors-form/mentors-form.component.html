@@ -1,1 +1,45 @@
 <p>mentors-form works!</p>
+<div class="input-group mb-3">
+  <span class="input-group-text" id="basic-addon1">Mentor Name</span>
+  <input
+    type="text"
+    #mentorName
+    (keyup)="(0)"
+    class="form-control"
+    placeholder="Enter name"
+    aria-label="MentorName"
+    aria-describedby="basic-addon1"
+  />
+</div>
+
+<div class="input-group mb-3">
+  <span class="input-group-text" id="basic-addon1">Experience in Years</span>
+  <input
+    type="number"
+    #yearExperience
+    (keyup)="(0)"
+    class="form-control"
+    placeholder="Enter Exp in years"
+    aria-label="years"
+    aria-describedby="basic-addon1"
+  />
+</div>
+<div class="input-group mb-3">
+  <span class="input-group-text" id="basic-addon1">Experience in months</span>
+  <input
+    type="number"
+    #monthExperience
+    (keyup)="(0)"
+    class="form-control"
+    placeholder="Enter Exp in months"
+    aria-label="years"
+    aria-describedby="basic-addon1"
+  />
+</div>
+
+<button
+  class="btn btn-primary"
+  (click)="add(mentorName.value, yearExperience.value, monthExperience.value)"
+>
+  Add
+</button>
