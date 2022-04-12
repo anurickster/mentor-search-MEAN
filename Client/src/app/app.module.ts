@@ -1,9 +1,8 @@
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule, Routes } from '@angular/router';
 
-import { AppRoutingModule } from './auth/auth-routing.module';
+import { AuthRoutingModule } from './auth/auth-routing.module';
 import { AppComponent } from './app.component';
 import { MentorsFormComponent } from './mentors/components/mentors-form/mentors-form.component';
 import { MentorsViewComponent } from './mentors/components/mentors-view/mentors-view.component';
@@ -23,7 +22,7 @@ import { MentorRoutingModule } from './mentors/mentor-routing.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    AuthRoutingModule,
     MentorRoutingModule,
     HttpClientModule,
   ],
