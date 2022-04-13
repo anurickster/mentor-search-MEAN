@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { LoginService } from '../../services/login.service';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators} from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 
@@ -34,8 +34,8 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
     this.loginForm = this.formBuilder.group({
-      email: [''],
-      password: ['']
+      email: ['',Validators.required],
+      password: ['',Validators.required]
       
     });
   }
@@ -52,7 +52,7 @@ export class LoginComponent implements OnInit {
         this.loginForm.reset();
         this.router.navigate(['/view']);
       }else{
-        alert('User Not Found!!');
+        alert('Invalid Credential!!');
       }
 
     },err=>{
