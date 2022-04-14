@@ -15,6 +15,7 @@ router.post(
 );
 
 router.post('/login', authenticateUser, async (req, res) => {
+  console.log('dfghjk');
   const user = await User.findOne({ email: req.body.email });
   const token = user.getSignedJwtToken();
   res.status(200).json({ auth: true, token: token });

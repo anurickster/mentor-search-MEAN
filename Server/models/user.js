@@ -9,21 +9,21 @@ const UserSchema = new Schema({
     type: String,
     required: true,
   },
+  phone: {
+    type: Number,
+    required: true,
+  },
   email: {
     type: String,
     required: true,
     unique: true,
     validate: [isEmail, 'Please enter valid email'],
   },
-  phone: {
-    type: Number,
-    required: true,
-  },
-  work: {
-    type: String,
-    required: true,
-    options: ['Student', 'Mentor', 'Developer', 'Others'],
-  },
+  // work: {
+  //   type: String,
+  //   required: true,
+  //   options: ['Student', 'Mentor', 'Developer', 'Others'],
+  // },
   password: {
     type: String,
     required: [true, 'Please add a password'],
