@@ -1,7 +1,7 @@
 <!-- <p>signup works!</p>
 <a routerLink=""><button class="btn btn-primary">Already Registred?</button></a> -->
 
-<div class="container">
+<!-- <div class="container">
   <div class="row">
     <div class="col-md-6">
       <div class="card">
@@ -113,4 +113,139 @@
       </div>
     </div>
   </div>
+</div> -->
+
+<div class="signup-container">
+  <section class="signup">
+    <div class="container mt-5">
+      <div class="signup-content">
+        <div class="signup-form">
+          <h2 class="form-title">Sign up</h2>
+          <form
+            [formGroup]="signupForm"
+            class="register-form"
+            (ngSubmit)="signUp()"
+          >
+            <div class="form-group">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                autoComplete="off"
+                placeholder="Your Name"
+              />
+              <span
+                class="text-danger"
+                *ngIf="
+                  signupForm.controls['name'].dirty &&
+                  signupForm.hasError('required', 'name')
+                "
+                >*Name is Required!</span
+              >
+            </div>
+
+            <div class="form-group">
+              <input
+                type="email1"
+                name="email"
+                id="email"
+                autoComplete="off"
+                placeholder="Your Email"
+              />
+              <span
+                class="text-danger"
+                *ngIf="
+                  signupForm.controls['email'].dirty &&
+                  signupForm.hasError('required', 'email')
+                "
+                >*Email is Required!</span
+              >
+            </div>
+
+            <div class="form-group">
+              <input
+                type="number1"
+                name="phone"
+                id="phone"
+                autoComplete="off"
+                placeholder="Your Phone"
+              />
+              <span
+                class="text-danger"
+                *ngIf="
+                  signupForm.controls['phone'].dirty &&
+                  signupForm.hasError('required', 'phone')
+                "
+                >*Mobile Number is Required!</span
+              >
+            </div>
+
+            <div class="role-container">
+              <input type="radio" id="Student" value="Student" name="role" />
+              <div htmlFor="Student">Student</div>
+              <input type="radio" id="Mentor" value="Mentor" name="role" />
+              <div htmlFor="mentor">Mentor</div>
+              <input type="radio" id="Admin" value="Admin" name="role" />
+              <div htmlFor="admin" class="admin">Admin</div>
+            </div>
+
+            <div class="form-group">
+              <input
+                type="password"
+                name="password"
+                id="password"
+                autoComplete="off"
+                placeholder="Your Password"
+              />
+              <span
+                class="text-danger"
+                *ngIf="
+                  signupForm.controls['password'].dirty &&
+                  signupForm.hasError('required', 'password')
+                "
+                >*Password is Required!</span
+              >
+            </div>
+
+            <div class="form-group">
+              <input
+                type="password"
+                name="cpassword"
+                id="cpassword"
+                autoComplete="off"
+                placeholder="Confirm Your Password"
+              />
+              <span
+                class="text-danger"
+                *ngIf="
+                  signupForm.controls['password'].dirty &&
+                  signupForm.hasError('required', 'password')
+                "
+                >*Password is Required!</span
+              >
+            </div>
+
+            <div class="form-group form-button">
+              <input
+                type="submit"
+                name="signup"
+                id="signup"
+                class="form-submit"
+                value="Register"
+              />
+            </div>
+          </form>
+        </div>
+
+        <div class="signup-image">
+          <figure>
+            <img src={} alt="registration pic" />
+          </figure>
+          <a routerLink="/login" class="signup-image-link">
+            Already Registred?
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 </div>

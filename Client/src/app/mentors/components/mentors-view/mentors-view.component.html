@@ -3,34 +3,50 @@
 <!-- {{ mentors | json }} -->
 
 <div *ngFor="let mentor of mentors; let i = index">
-  <div class="card">
-    <img class="card-img-top" src="{{ mentor.imgUrl }}" alt="Card image cap" />
-    <div>
-      <div class="card-header">
-        <h3>{{ mentor.mentorName }}</h3>
+  <div class="container">
+    <div class="card">
+      <div class="card-image">
+        <img class="card-img" src="{{ mentor.imgUrl }}" alt="Card image cap" />
       </div>
-      <div class="card-body">
-        <p>{{ mentor.yearExperience }} years</p>
-      </div>
-      <div class="card-body">
+      <div class="card-text">
+        <span class="date">{{ mentor.mentorName }}</span>
+        <h4>{{ mentor.yearExperience }} years</h4>
         <p>{{ mentor.monthExperience }} months</p>
-      </div>
-      <div>
         <ul class="skills__Container">
           <li class="skills" *ngFor="let skill of mentor.mentorSkills">
             {{ skill }}
           </li>
         </ul>
+        <div class="btn-del">
+          <button
+            class="btn btn-danger"
+            (click)="deleteMentorRecord(mentor._id)"
+          >
+            Delete
+          </button>
+          <button
+            class="btn btn-primary"
+            (click)="updateMentorRecord(mentor._id, mentor)"
+          >
+            Update
+          </button>
+        </div>
       </div>
-      <button class="btn btn-danger" (click)="deleteMentorRecord(mentor._id)">
-        Delete
-      </button>
-      <button
-        class="btn btn-primary"
-        (click)="updateMentorRecord(mentor._id, mentor)"
-      >
-        update
-      </button>
+
+      <div class="card-stats">
+        <div class="stat">
+          <div class="value">4<sup>m</sup></div>
+          <div class="type">read</div>
+        </div>
+        <div class="stat border">
+          <div class="value">5123</div>
+          <div class="type">views</div>
+        </div>
+        <div class="stat">
+          <div class="value">32</div>
+          <div class="type">comments</div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
